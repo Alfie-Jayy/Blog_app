@@ -1,5 +1,7 @@
 <template>
-    <div class="loader"></div>
+    <div class="spinner">
+      <div class="loader"></div>
+    </div>
 </template>
 
 <script>
@@ -13,7 +15,7 @@
 .loader {
   width: 40px;
   height: 26px;
-  --c:no-repeat linear-gradient(#000 0 0);
+  --c:no-repeat linear-gradient(#036999 0 0);
   background:
     var(--c) 0    100%,
     var(--c) 50%  100%,
@@ -27,7 +29,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #000;
+  background: #03848d;
   left: 0;
   top: 0;
   animation: 

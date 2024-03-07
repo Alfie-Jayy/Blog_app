@@ -2,16 +2,16 @@ import { ref } from 'vue';
 
 let getPosts = () => {
   
-  let jobs = ref([]);
+  let posts = ref([]);
   let error = ref("");
 
   let load = async () => {
     try {
 
       //fake loading function
-      await new Promise( (resolve, reject)=>{
-          setTimeout(resolve, 2000)
-      })
+      // await new Promise( (resolve, reject)=>{
+      //     setTimeout(resolve, 2000)
+      // })
       
       let response = await fetch("http://localhost:3000/posts");
 
@@ -19,14 +19,14 @@ let getPosts = () => {
         throw new Error("not found URL");
       }
 
-      jobs.value = await response.json();
+      posts.value = await response.json();
     
     } catch (err) {
       error.value = err.message;
     }
   }
 
-  return {jobs, error, load}
+  return {posts, error, load}
 
 };
 

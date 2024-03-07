@@ -1,14 +1,12 @@
 <template>
-    <div>
-
-        <h1>My Job Projects</h1>
+    <div class="main">
 
         <div v-if="error">
             <h1>{{ error }}</h1>
         </div>
         
-        <div v-else-if="jobs.length > 0">
-            <JobList :jobs='jobs'></JobList>
+        <div v-else-if="posts.length > 0">
+            <BlogList :posts='posts'></BlogList>
         </div>
         
         <div v-else>
@@ -22,21 +20,21 @@
 
 
 import Spinner from '../components/Spinner'
-import JobList from '../components/JobList.vue'
+import BlogList from '../components/BlogList.vue'
 import getPosts from '../composables/getPosts';
 
     export default {
     
-        components: {
-    Spinner, JobList },
+    components: {
+    Spinner, BlogList },
         
         setup(){
             
-            let {load, jobs, error} = getPosts();
+            let {load, posts, error} = getPosts();
             
             load()
                        
-            return {jobs, error}
+            return {posts, error}
 
         }
     }

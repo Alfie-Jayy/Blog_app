@@ -9,9 +9,9 @@ let getPost = (id) => {
         try {
 
             //fake loading function
-            await new Promise( (response, reject)=>{
-                setTimeout(response, 2000)
-            } )
+            // await new Promise( (response, reject)=>{
+            //     setTimeout(response, 2000)
+            // } )
 
             let response = await fetch('http://localhost:3000/posts/'+id);
 

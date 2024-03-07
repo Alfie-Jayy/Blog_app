@@ -1,4 +1,4 @@
-# Mini Blog App using Vue Composition API
+# Mini Blog App using Vue Composition API, and Tailwind CSS
 
 ## Project setup
 ```
