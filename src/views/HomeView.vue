@@ -3,12 +3,16 @@
 
         <h1>My Job Projects</h1>
 
-        <div v-if="jobs">
+        <div v-if="error">
+            <h1>{{ error }}</h1>
+        </div>
+        
+        <div v-else-if="jobs.length > 0">
             <JobList :jobs='jobs'></JobList>
         </div>
         
         <div v-else>
-            <p>Loading...</p>
+            <Spinner></Spinner>
         </div>
         
     </div>
@@ -16,13 +20,15 @@
 
 <script>
 
-import { ref } from 'vue';
+
+import Spinner from '../components/Spinner'
 import JobList from '../components/JobList.vue'
 import getPosts from '../composables/getPosts';
 
     export default {
     
-        components: { JobList },
+        components: {
+    Spinner, JobList },
         
         setup(){
             

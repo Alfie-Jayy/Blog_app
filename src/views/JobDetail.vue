@@ -1,17 +1,23 @@
 <template>
+        
     <div v-if="error">
         <p>{{ error }}</p>
     </div>
-    <div v-else>
+    <div v-else-if="post">
         <h3>Title - {{ post.title }}</h3>
         <h3>Level -{{ post.level }}</h3>
         <p>{{ post.detail }}</p>
     </div>
+    <div v-else>
+        <Spinner></Spinner>
+    </div>
 </template>
 
 <script>
-    import getPost from '../composables/getPost.js'
+import Spinner from '../components/Spinner'
+import getPost from '../composables/getPost.js'
     export default {
+    components: { Spinner },
         
         props: ['id'],
 

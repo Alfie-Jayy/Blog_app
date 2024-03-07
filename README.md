@@ -1,4 +1,4 @@
-# vue_test
+# Mini Blog App using Vue Composition API
 
 ## Project setup
 ```
