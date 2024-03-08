@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'pacifico' : ["Pacifico", 'cursive']
+      'pacifico' : ["Pacifico", 'cursive'],
+      'quicksand' : ["Quicksand", 'sans-serif']
     }
   },
   plugins: [],

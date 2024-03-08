@@ -1,7 +1,7 @@
 <template>
-  <div class="main">
+  <div class="crate-main">
     
-    <form @submit.prevent="Create" >
+    <form @submit.prevent="Create">
 
         <div>
             <label class="label">Blog Title</label>

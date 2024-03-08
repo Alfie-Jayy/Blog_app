@@ -49,6 +49,16 @@
         "Machine Learning",
         "Database"
       ]
+    },
+    {
+      "id": "ecad",
+      "title": "E-comerce Website",
+      "detail": "Like Amazon website",
+      "tags": [
+        "PHP",
+        "Laravel",
+        "Tailwind"
+      ]
     }
   ]
 }

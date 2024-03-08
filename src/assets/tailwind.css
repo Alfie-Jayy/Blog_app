@@ -5,16 +5,25 @@
 @layer components{
     
     .main{
-        @apply container mx-auto p-10
-    }  
+        @apply container mx-auto py-14 px-5
+    } 
+    .nav{
+      @apply mx-auto px-40 py-7 w-full shadow
+    }
+    .nav-parent{
+      @apply flex justify-between items-center flex-wrap space-y-5
+    }
+    .crate-main{
+      @apply container mx-auto py-10 px-10 md:px-40
+    }
     .spinner{
         @apply flex justify-center items-center h-screen
-    }  
-    .nav{
-        @apply text-rose-600 font-bold text-xl
-    }
+    } 
     .blog{
         @apply bg-slate-200 p-10 rounded-lg space-y-5 mb-7
+    }
+    .nav-title{
+      @apply text-xl sm:text-4xl font-pacifico text-pink-400
     }
     .title{
         @apply font-bold text-xl text-sky-700
@@ -41,13 +50,34 @@
         @apply bg-slate-200 text-green-700 font-semibold p-2 w-fit rounded-lg
       }
       .tag{
-        @apply bg-green-500 text-slate-900 font-semibold px-2 py-1 w-fit rounded-lg
+        @apply bg-green-500 text-white font-semibold px-2 py-1 w-fit rounded-lg
       }
       .remove{
         @apply cursor-pointer text-red-600
       }
-      /* .router-link-active{
-        @apply text-rose-700
-      } */
+      .layout{
+        @apply md:flex flex-row-reverse
+      }
+      .first-layout{
+        @apply md:w-1/3 md:ps-5
+      }
+      .sec-layout{
+        @apply md:flex-grow
+      }
+      .cloud-title{
+        @apply font-bold text-2xl md:font-normal md:text-3xl md:text-center text-green-600 pb-7
+      }
+      .cloud-parent{
+        @apply flex space-x-3 flex-wrap pb-10 md:pb-0
+      }
+      .cloud{
+        @apply font-semibold text-white bg-pink-500 p-2 rounded-lg m-3
+      }
+      .router-link-active{
+        @apply text-slate-700
+      }
+      *{
+        @apply font-quicksand
+      }
 
 }

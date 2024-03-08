@@ -4,7 +4,7 @@
         <p class="detail" >{{ cutBlogDetail }} ...</p>
         <div class="tag-parent">
                 <div v-for="tag in post.tags" class="tag" >
-                    <p>{{ tag }}</p>
+                    <router-link :to="{name: 'tag', params:{tag: tag}  }" >{{ tag }}</router-link>
                 </div>
         </div>
     </div>
