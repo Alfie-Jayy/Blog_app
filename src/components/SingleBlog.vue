@@ -19,7 +19,7 @@
         setup(props) {
             
             let cutBlogDetail = computed( ()=>{
-                return props.post.detail.substring(1, 100);
+                return props.post.detail.substring(0, 100);
             } )
 
             return {cutBlogDetail}

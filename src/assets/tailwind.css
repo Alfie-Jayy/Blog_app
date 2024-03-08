@@ -46,4 +46,8 @@
       .remove{
         @apply cursor-pointer text-red-600
       }
+      /* .router-link-active{
+        @apply text-rose-700
+      } */
+
 }

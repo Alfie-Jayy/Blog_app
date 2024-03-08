@@ -39,6 +39,7 @@
 
 <script>
 import { ref} from "vue";
+import { useRouter } from "vue-router";
 
 export default {
   setup() {
@@ -49,6 +50,7 @@ export default {
     let titleError = ref(false);
     let detailError = ref(false);
     let includeError = ref(false);
+    let router = useRouter()
 
     let CreateTag = () => {
       if (!tags.value.includes(tag.value)) {
@@ -61,7 +63,7 @@ export default {
     };
 
     let Create = async() => {
-            
+      
       if (title.value == "") {
         titleError.value = true;
       } else {
@@ -84,6 +86,7 @@ export default {
           tags: tags.value
         })
       })
+      router.push('/')
       }
     
     };

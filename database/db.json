@@ -31,13 +31,23 @@
       ]
     },
     {
-      "id": "e769",
-      "title": "TITLe",
-      "detail": "Detail",
+      "id": "5988",
+      "title": "Technology",
+      "detail": "This is about technology",
       "tags": [
         "HTML",
-        "CSS",
-        "JS"
+        "AI",
+        "Python"
+      ]
+    },
+    {
+      "id": "9097",
+      "title": "Computer Science",
+      "detail": "Let's explore your knowledge about computer science",
+      "tags": [
+        "Algorithm",
+        "Machine Learning",
+        "Database"
       ]
     }
   ]
