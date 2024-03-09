@@ -9,11 +9,10 @@ let getPosts = () => {
   let load = async () => {
     try {
       
-      let response = await db.collection('posts').get()
-        posts.value = response.docs.map( (doc)=>{
-            // console.log(doc.data());
-            return {id:doc.id,...doc.data()}
-        } )
+      let response = await db.collection('posts').get();
+      posts.value = response.docs.map( (doc) => {
+          return {id:doc.id,...doc.data()}
+      } )
     
     } catch (err) {
       error.value = err.message;
