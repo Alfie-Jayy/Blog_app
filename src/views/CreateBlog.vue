@@ -40,6 +40,7 @@
 <script>
 import { ref} from "vue";
 import { useRouter } from "vue-router";
+import {db} from '../firebase/config'
 
 export default {
   setup() {
@@ -77,15 +78,15 @@ export default {
       }
 
       if(title.value && detail.value){
-        await fetch ('http://localhost:3000/posts', {
-        method: 'POST',
-        headers: {"Content-type": "application/json"},
-        body:JSON.stringify({
+        
+        let data = {
           title: title.value,
           detail: detail.value,
           tags: tags.value
-        })
-      })
+        }
+
+      await db.collection('posts').add(data)
+
       router.push('/')
       }
     
