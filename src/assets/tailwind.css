@@ -65,10 +65,10 @@
         @apply md:flex-grow
       }
       .cloud-title{
-        @apply font-bold text-2xl md:font-normal md:text-3xl md:text-center text-green-600 pb-7
+        @apply border-b-2 pb-3 border-green-500 font-bold text-2xl md:font-normal md:text-3xl md:text-center text-green-600
       }
       .cloud-parent{
-        @apply flex space-x-3 flex-wrap pb-10 md:pb-0
+        @apply flex space-x-3 flex-wrap pb-10 md:pb-0 pt-5
       }
       .cloud{
         @apply font-semibold text-white bg-pink-500 p-2 rounded-lg m-3
