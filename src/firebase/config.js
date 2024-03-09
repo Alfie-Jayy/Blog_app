@@ -1,6 +1,6 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp, firebase } from "firebase/app";
-import "firebase/firestore"
+import { initializeApp } from "firebase/app";
+import firebase from "firebase/compat/app";
+import "firebase/compat/firestore"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -13,9 +13,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
+let db = firebase.firestore()
 
-//dabase set up
-let db = firebase.firestore();
-
-export {db};
+export {db}
