@@ -8,10 +8,13 @@
         @apply container mx-auto py-14 px-5
     } 
     .nav{
-      @apply mx-auto px-40 py-7 w-full shadow sticky top-0 right-0 bg-white
+      @apply mx-auto py-7 w-full shadow sticky top-0 right-0 bg-white
     }
     .nav-parent{
-      @apply flex justify-between items-center flex-wrap space-y-5 md:px-24
+      @apply flex justify-between items-center px-10 md:px-24 lg:px-80
+    }
+    .nav-title{
+      @apply text-xl sm:text-4xl pb-2 sm:pb-0 pe-3 md:pe-0 font-pacifico text-pink-400
     }
     .crate-main{
       @apply container mx-auto py-10 px-10 md:px-40
@@ -21,9 +24,6 @@
     } 
     .blog{
         @apply bg-slate-200 p-10 rounded-lg space-y-5 mb-7
-    }
-    .nav-title{
-      @apply text-xl sm:text-4xl font-pacifico text-pink-400
     }
     .title{
         @apply font-bold text-xl text-sky-700
@@ -75,6 +75,9 @@
       }
       .router-link-active{
         @apply text-slate-700
+      }
+      .delete-btn{
+        @apply bg-red-600 duration-500 text-white hover:bg-red-700 py-1 px-2 font-semibold rounded-lg
       }
       *{
         @apply font-quicksand

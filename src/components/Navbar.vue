@@ -2,7 +2,7 @@
     <div class="nav" >
         <div class="nav-parent">
             <div class="nav-title">Bloggy Blogs</div>
-            <div class="space-x-5 text-xl">
+            <div class="space-x-5 text-md md:text-xl">
                 <router-link class="text-slate-600 hover:text-rose-400 transition duration-500 font-normal " to="/">Home</router-link>
                 <router-link class="text-slate-600 hover:text-rose-400 transition duration-500 font-normal " :to="{name: 'create'}" >Create</router-link>
             </div>
