@@ -71,7 +71,7 @@
         @apply flex space-x-3 flex-wrap pb-10 md:pb-0 pt-5
       }
       .cloud{
-        @apply font-semibold text-white bg-pink-500 p-2 rounded-lg m-3
+        @apply font-semibold text-slate-500 p-2 m-3
       }
       .router-link-active{
         @apply text-slate-700
